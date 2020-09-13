@@ -1,8 +1,4 @@
 <template>
-  <!-- <v-container>
-      <v-row>
-      </v-row>
-    </v-container> -->
   <div>
     <v-row>
       <v-col cols="4">
@@ -21,7 +17,7 @@
           </v-card-title>
 
           <div v-for="sel in selected" :key="sel.id">
-            <v-card-text :append-icon="sel.icon">
+            <v-card-text>
               {{ sel.title }} <v-icon>{{ sel.icon }}</v-icon>
             </v-card-text>
           </div>
@@ -77,7 +73,6 @@ export default {
     ]
   }),
   computed: {
-    // this.selected = this.subItems.filter(item => item.value === true)
     selected: function() {
       const selectedProp = this.subItems.filter(item => item.value === true)
       console.log(selectedProp)

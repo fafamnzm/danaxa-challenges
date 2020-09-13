@@ -23,6 +23,11 @@ const routes = [
     path: "/checkbox",
     name: "CheckBox",
     component: () => import("../views/CheckBox.vue")
+  },
+  {
+    path: "/tool",
+    name: "Tool",
+    component: () => import("../views/Tool.vue")
   }
 ]
 
