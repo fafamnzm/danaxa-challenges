@@ -1,14 +1,13 @@
 <template>
-  <div>
+  <div width="500" justify="center">
     <v-row>
       <v-col cols="3">
         <v-spacer></v-spacer>
       </v-col>
       <v-col cols="6">
-        <v-card :dark="theme" align="center" justify="center">
-          <v-card-title align="center" justify="center" class="mx-auto">
+        <v-card :dark="theme">
+          <v-card-title class="mx-auto">
             <v-row
-              class="mx-auto mt-5"
               v-for="type in types"
               :key="type.id"
               wdith="500"
@@ -22,7 +21,7 @@
               <v-icon style="white">{{ type.icon }}</v-icon>
             </v-row>
           </v-card-title>
-
+          <v-divider></v-divider>
           <v-card-text>
             <v-row v-for="sel in selected" :key="sel.id">
               <v-col cols="3">
@@ -128,4 +127,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-card_title {
+  padding: 0 !important;
+}
+</style>

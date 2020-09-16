@@ -5,8 +5,8 @@
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link> |
         <router-link to="/checkbox">Check Box</router-link> |
-        <router-link to="/tool">Tool</router-link> |
-        <router-link to="/navdrawer">Navigation Drawer</router-link>
+        <router-link to="/tool">Tool</router-link>
+        <!-- <router-link to="/navdrawer">Navigation Drawer</router-link> -->
       </div>
       <router-view />
     </v-app>
