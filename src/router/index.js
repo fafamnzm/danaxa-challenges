@@ -28,6 +28,11 @@ const routes = [
     path: "/tool",
     name: "Tool",
     component: () => import("../views/Tool.vue")
+  },
+  {
+    path: "/navdrawer",
+    name: "NavDrawer",
+    component: () => import("../views/NavigationDrawer.vue")
   }
 ]
 

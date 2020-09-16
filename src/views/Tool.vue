@@ -5,7 +5,7 @@
         <v-spacer></v-spacer>
       </v-col>
       <v-col cols="4">
-        <v-card>
+        <v-card dense>
           <v-card-title>
             Chosen Tool :
             <div v-if="chosenTool">
