@@ -55,57 +55,57 @@ export default {
       {
         id: 1,
         title: "box_corners",
-        value: false,
+        value: true,
         icon: "mdi-graph-outline"
       },
       {
         id: 2,
         title: "bounding_box",
-        value: false,
+        value: true,
         icon: "mdi-shape-square-plus"
       },
-      { id: 3, title: "human", value: false, icon: "mdi-human" }
+      { id: 3, title: "human", value: true, icon: "mdi-human" }
     ],
     subItems: [
       {
         id: 1,
         title: "box_corners",
-        value: false,
+        value: true,
         icon: "mdi-graph-outline",
         iconcolor: "yellow"
       },
       {
         id: 2,
         title: "box_corners",
-        value: false,
+        value: true,
         icon: "mdi-graph-outline",
         iconcolor: "green"
       },
       {
         id: 3,
         title: "box_corners",
-        value: false,
+        value: true,
         icon: "mdi-graph-outline",
         iconcolor: "blueviolet"
       },
       {
         id: 4,
         title: "bounding_box",
-        value: false,
+        value: true,
         icon: "mdi-shape-square-plus",
         iconcolor: "limegreen"
       },
       {
         id: 5,
         title: "bounding_box",
-        value: false,
+        value: true,
         icon: "mdi-shape-square-plus",
         iconcolor: "goldenrod"
       },
       {
         id: 6,
         title: "human",
-        value: false,
+        value: true,
         icon: "mdi-human",
         iconcolor: "teal"
       }

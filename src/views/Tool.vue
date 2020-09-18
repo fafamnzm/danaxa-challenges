@@ -4,7 +4,7 @@
       <v-col cols="3">
         <v-spacer></v-spacer>
       </v-col>
-      <v-col cols="2">
+      <v-col xs="2" md="1">
         <v-card dark>
           <v-card-text
             dense
@@ -13,7 +13,7 @@
             :key="tool.id"
           >
             <v-radio-group v-model="chosenTool" column>
-              <v-radio :value="tool" append-icon="mdi-graph-outline">
+              <v-radio :value="tool">
                 <template v-slot:label>
                   <v-icon>{{ tool.icon }}</v-icon>
                 </template>
@@ -27,27 +27,11 @@
           <v-card-title>
             Chosen Tool :
             <div v-if="chosenTool">
-              {{ chosenTool.name }} - <v-icon>{{ chosenTool.icon }}</v-icon>
+              {{ chosenTool.name }} -
+              <v-icon>{{ chosenTool.icon }}</v-icon>
             </div>
-            <div v-else>
-              Nothing is selected yet!
-            </div>
+            <div v-else>Nothing is selected yet!</div>
           </v-card-title>
-          <!-- <v-card-text
-            dense
-            justify="start"
-            v-for="tool in toolSet"
-            :key="tool.id"
-          >
-            <v-radio-group v-model="chosenTool" column>
-              <v-radio :value="tool" append-icon="mdi-graph-outline">
-                <template v-slot:label>
-                  <v-icon>{{ tool.icon }}</v-icon>
-                </template>
-              </v-radio>
-            </v-radio-group>
-          </v-card-text>
-          <v-card-actions> </v-card-actions> -->
         </v-card>
       </v-col>
       <v-col cols="3">
@@ -111,4 +95,4 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped></style>
